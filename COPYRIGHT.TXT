@@ -1,0 +1,6 @@
+Copyright 2017-2018 all CASToR contributors listed below:
+
+    --> current contributors: Thibaut MERLIN, Simon STUTE, Didier BENOIT, Claude COMTAT, Marina FILIPOVIC, Mael MILLARDET
+    --> past contributors: Valentin VIELZEUF
+
+This is CASToR version 2.0.1.
