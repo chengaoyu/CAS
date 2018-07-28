@@ -1,0 +1,23 @@
+#	Name		Half-life (s)	Branching ratio
+	Br-75		5802.		0.725
+	C-11		1223.		1.
+	Cu-62		584.4		0.98
+	Cu-64		45720.		0.179
+	F-18		6586.2		0.967
+	Mn-52		483062.		0.296
+	Ga-68		4057.7		0.89
+	Ge-68		23399000.	0.891
+	N-13		597.9		1.
+	O-14		70.606		1.
+	O-15		122.24		1.
+	Rb-82		76.38		0.955
+	Na-22		82110000.	0.9
+	Br-76		58320.		0.57
+	K-38		458.2		0.995
+        Zr-89           282276          0.227
+	GATE_F-18	6586.2		1.
+	INF		0.		1.
+# Comments are beginning with a '#' character at the very first character of a line.
+# Comments at the end of a line are strictly forbidden.
+# Space or tabs (\t) are both allowed between numbers.
+# Sorry, this is a cheap implementation!

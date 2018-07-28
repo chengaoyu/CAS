@@ -1,0 +1,6 @@
+#ifndef oCASTORCONFIG_HH
+#define oCASTORCONFIG_HH
+
+#cmakedefine CASTOR_CONFIG "@CASTOR_CONFIG@"
+
+#endif

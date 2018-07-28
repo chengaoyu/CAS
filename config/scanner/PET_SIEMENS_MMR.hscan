@@ -1,0 +1,19 @@
+scanner name:    PET_SIEMENS_MMR
+modality:    PET
+description: This scanner description is based on an actual scanner, however, this implementation is not supported nor validated by its manufacturer.
+scanner radius:    328
+number of rings in scanner:    64
+number of elements:    28672
+number of layers:    1
+number of crystals in layer(s):    28672
+crystals size depth:    20.00
+crystals size transaxial:    4.00
+crystals size axial:    4.00
+layers material:    LSO
+voxels number transaxial:    344
+voxels number axial:    127
+field of view transaxial:    717.67344
+field of view axial:    257.96875
+min angle difference:    40 #deg
+mean depth of interaction:    -1
+#optional (default value : center of crystal ). Input value must correspond to the distance from the crystal surface, or negative value if default

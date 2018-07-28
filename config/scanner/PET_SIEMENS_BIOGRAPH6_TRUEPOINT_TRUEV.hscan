@@ -1,0 +1,18 @@
+scanner name: PET_BIOGRAPH6_TRUEPOINT_4RINGS
+modality: PET
+description: This scanner description is based on an actual scanner, however, this implementation is not supported nor validated by its manufacturer.
+number of rings in scanner: 52
+number of elements: 32448
+number of layers: 1
+number of crystals in layer: 32448
+crystals size depth: 20.
+mean depth of interaction: 9.6
+min angle difference: 90
+# Sampling corresponding to standard whole-body
+voxels number transaxial: 168
+voxels number axial: 109
+# This is the default FOV
+field of view transaxial: 672.
+field of view axial: 220.943
+# Bed displacement between two successive bed positions (74 slices of 2.027mm)
+multiple bed displacement: 149.998

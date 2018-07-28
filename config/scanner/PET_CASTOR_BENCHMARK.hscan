@@ -1,0 +1,14 @@
+modality: PET
+scanner radius: 437.6
+number of rings in scanner: 52
+number of elements: 32448
+number of layers: 1
+number of crystals in layer: 32448
+crystals size depth: 20.
+voxels number transaxial: 336
+voxels number axial: 109
+field of view transaxial: 672.
+field of view axial: 220.943
+mean depth of interaction: -1
+min angle difference: 90
+description: CASToR PET benchmark scanner for versions 1.X
