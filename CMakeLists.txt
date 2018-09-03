@@ -419,8 +419,9 @@ endif()
 # Build GATE tools for CASToR 
 if( CASToR_BUILD_SAMPLE_UTILITIES )
   add_executable( castor-PetScannerLutEx      ${TOOLKITS_SOURCE_DIR}/castor-PetScannerLutEx.cc ${sources} ${headers} )
-  add_executable( castor-datafileConversionEx ${TOOLKITS_SOURCE_DIR}/castor-datafileConversionEx.cc ${sources}
-  ${headers} )
+  add_executable( castor-datafileConversionEx ${TOOLKITS_SOURCE_DIR}/castor-datafileConversionEx.cc ${sources} ${headers} )
+  # added by chengaoyu2013@gmail.com on 2018/09/03
+  add_executable( cgy-GATESinoToCastor    ${TOOLKITS_SOURCE_DIR}/cgy-GATESinoToCastor.cc ${sources} ${headers})
 endif()
   
 if( WIN32 )
@@ -464,6 +465,10 @@ else()
     target_link_libraries( castor-GATEMacToGeom ${ROOT_LIBRARIES} ${MPI_LIBRARIES}
       ${DEFORMATION_LEDESMA_LIBRARIES} ${ITK_LIBRARIES} ${OpenMP_CXX_FLAGS}
     )
+    # added by chengaoyu2013@gmail.com on 2018/09/03
+    target_link_libraries( cgy-GATESinoToCastor ${ROOT_LIBRARIES} ${MPI_LIBRARIES}
+      ${DEFORMATION_LEDESMA_LIBRARIES} ${ITK_LIBRARIES} ${OpenMP_CXX_FLAGS}
+    )
   endif()
   if( CASToR_BUILD_SAMPLE_UTILITIES )
     target_link_libraries( castor-PetScannerLutEx ${ROOT_LIBRARIES} ${MPI_LIBRARIES}
@@ -493,7 +498,7 @@ endif()
 
 if( CASToR_BUILD_GATE_UTILITIES )
   install( TARGETS
-    castor-GATERootToCastor castor-GATEMacToGeom
+    castor-GATERootToCastor castor-GATEMacToGeom cgy-GATESinoToCastor
     DESTINATION
     bin
   )
