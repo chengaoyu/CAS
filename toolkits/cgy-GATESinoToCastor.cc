@@ -1375,7 +1375,7 @@ int main(int argc, char** argv)
 
              ((iEventListSPECT*)Event)->SetKind(kind);
 
-              Out_data_file->PROJ_WriteEvent(Event, 0);
+              Out_data_file->WriteEvent(Event, 0);
             }
           }
           else // PET event
@@ -1402,7 +1402,7 @@ int main(int argc, char** argv)
 
              ((iEventListPET*)Event)->SetKind(kind);
 
-             Out_data_file->PROJ_WriteEvent(Event, 0);
+             Out_data_file->WriteEvent(Event, 0);
             }
           }
       }
