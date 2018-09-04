@@ -824,7 +824,7 @@ int main(int argc, char** argv)
 
   Out_data_file->SetImageDimensionsAndQuantification(p_ID);
   Out_data_file->SetHeaderDataFileName(path_to_header_filename);
-  Out_data_file->SetPercentageLoad(0); // 0 (default)
+  // Out_data_file->SetPercentageLoad(0); // 0 (default)
   Out_data_file->SetVerbose(0);
 
 
@@ -1463,7 +1463,7 @@ int main(int argc, char** argv)
           }
 
           // Write event in DataFile
-          Out_data_file->PROJ_WriteEvent(Event, 0);
+          Out_data_file->WriteEvent(Event, 0);
           nBINs++;
 
           // Progression
@@ -1479,7 +1479,7 @@ int main(int argc, char** argv)
       Out_data_file->SetStartTime((FLTNB)(start_time_ms)/1000); // start time in s
       Out_data_file->SetDuration((FLTNB)(duration_ms)/1000); // duration in s
       Out_data_file->SetNbEvents( nBINs );
-      Out_data_file->PROJ_WriteHeader();
+      Out_data_file->WriteHeader();
 
       Cout(endl << "The output histogram contains " << nBINs  << " events." << endl);
     }
@@ -1490,7 +1490,7 @@ int main(int argc, char** argv)
       Out_data_file->SetDuration((FLTNB)(duration_ms)/1000); // duration in s
       //uint32_t nLORs = (true_only_flag) ? nLORs_trues : nLORs_tot;
       Out_data_file->SetNbEvents(nLORs_trues);
-      Out_data_file->PROJ_WriteHeader();
+      Out_data_file->WriteHeader();
     }
   }  // end of PET section
 
@@ -1525,7 +1525,7 @@ int main(int argc, char** argv)
 
 
   Out_data_file->PROJ_WriteData();
-  Out_data_file->PROJ_DeleteTmpDatafile();
+  Out_data_file->PROJ_DeleteTmpDataFile();
 
   Cout(endl << " --- Conversion completed --- " << endl);
 
